@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="DiaryApp.View.MainPage"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:DiaryApp.ViewModel"
+    d:DataContext="{d:DesignInstance viewModel:AppViewModel}"
+    mc:Ignorable="d">
+
+    <ScrollViewer x:ConnectionId='1'
+        x:Name="ScrollViewer1"
+        Background="FloralWhite" 
+        HorizontalScrollBarVisibility="Disabled"
+        VerticalScrollBarVisibility="Auto"
+        >
+       
+
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView 
+            DisplayMode="CompactOverlay"
+            IsPaneOpen="{Binding Path=IsMenuOpened, Mode=TwoWay}"
+            CompactPaneLength="50"
+            OpenPaneLength="200"
+            >
+            <SplitView.Pane>
+                <StackPanel>
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="#99F9440D"/>
+                    </StackPanel.Background>
+                    <Button x:ConnectionId='3' x:Name="MenuButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
+                            FontSize="20" Width="50" Height="50" Background="Transparent"                            Foreground="#FFFFFCFC"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='5' x:Name="NewButton" FontFamily="Segoe MDL2 Assets" Content="&#xE710;"
+                                FontSize="20" Width="50" Height="50" Background="Transparent"                         Foreground="#FFFFFCFC"/>
+                        <TextBlock Text="New Post" FontSize="18" VerticalAlignment="Center" Foreground="#FFFFFCFC" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='4' x:Name="AboutButton" FontFamily="Segoe MDL2 Assets" Content="&#xE897;"
+                                FontSize="20" Width="50" Height="50" Background="Transparent"                           Foreground="#FFFFFCFC"/>
+                        <TextBlock Text="About" FontSize="18" VerticalAlignment="Center" Foreground="#FFFFFCFC" />
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <StackPanel Orientation="Vertical" 
+                            Padding="10" >
+                    <TextBlock 
+                        Style="{ThemeResource HeaderTextBlockStyle}"
+                        Text="STORYLINE" Foreground="#FFE26024" FontFamily="Mongolian Baiti" Margin="1,1,10,30"
+                        
+                    />
+                        <ListView x:ConnectionId='6' VerticalAlignment="Stretch"
+                              HorizontalAlignment="Stretch"
+                              ItemsSource="{Binding Path=SortedPosts}"
+                                                                             >
+                            <ListView.ItemTemplate>
+                                
+                                <DataTemplate x:Name="SingleLineDataTemplate"                                     >
+                                    <StackPanel x:ConnectionId='7' RelativePanel.AlignLeftWith="" Orientation="Vertical" HorizontalAlignment="Stretch">
+                                        <TextBlock x:ConnectionId='8'                        Style="{ThemeResource BaseTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseHighBrush}" TextTrimming="CharacterEllipsis" MaxLines="1" />
+                                        <TextBlock x:ConnectionId='9'                      Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemControlPageTextBaseMediumBrush}" TextTrimming="CharacterEllipsis" MaxLines="2" />
+                                        <TextBlock x:ConnectionId='10'                           Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource ComboBoxItemDisabledForegroundThemeBrush}" FontSize="10" />
+                                        <TextBlock Text=" "></TextBlock>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                </StackPanel>
+            </SplitView.Content>
+        </SplitView>
+        <Image x:ConnectionId='2' x:Name="image" HorizontalAlignment="Left" Height="32" Margin="312,19,10,10" VerticalAlignment="Top" Width="40" Source="ms-appx:///Assets/Pen-Free-Download-PNG.png" RenderTransformOrigin="-2.024,-6.382" Grid.RowSpan="2" Stretch="Fill"/>
+
+    </Grid>
+    </ScrollViewer>
+</Page>
+ 
+

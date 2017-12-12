@@ -1,0 +1,2 @@
+MainPackage=F:\DiaryApp\DiaryApp\bin\x86\Release\DiaryApp_1.1.1.0_x86.appx
+SymbolPackage=F:\DiaryApp\DiaryApp\AppPackages\DiaryApp_1.1.1.0_Test\DiaryApp_1.1.1.0_x86.appxsym

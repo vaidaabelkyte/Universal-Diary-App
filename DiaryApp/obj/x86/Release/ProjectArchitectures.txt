@@ -1,0 +1,1 @@
+F:\DiaryApp\DiaryApp\DiaryApp.csproj;x86

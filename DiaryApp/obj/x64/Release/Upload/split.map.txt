@@ -1,0 +1,19 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"scale-200"
+"ResourceDimensions"		"language-en-us"
+
+[Files]
+"F:\DiaryApp\DiaryApp\obj\x64\Release\Upload\split.pri"			"resources.pri"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\WinMetadata\Windows.winmd"			"WinMetadata\Windows.winmd"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Properties\Default.rd.xml"			"Properties\Default.rd.xml"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\DiaryApp.xr.xml"			"DiaryApp.xr.xml"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\Wide310x150Logo.scale-200.png"			"Assets\Wide310x150Logo.scale-200.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\StoreLogo.png"			"Assets\StoreLogo.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\Square71x71Logo.scale-200.png"			"Assets\Square71x71Logo.scale-200.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\Square44x44Logo.scale-200.png"			"Assets\Square44x44Logo.scale-200.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\Square44x44Logo.targetsize-24_altform-unplated.png"			"Assets\Square44x44Logo.targetsize-24_altform-unplated.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\Square310x310Logo.scale-200.png"			"Assets\Square310x310Logo.scale-200.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\Square150x150Logo.scale-200.png"			"Assets\Square150x150Logo.scale-200.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\SplashScreen.scale-200.png"			"Assets\SplashScreen.scale-200.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\Pen-Free-Download-PNG.png"			"Assets\Pen-Free-Download-PNG.png"
+"F:\DiaryApp\DiaryApp\obj\x64\Release\PackageUploadLayout\Assets\LockScreenLogo.scale-200.png"			"Assets\LockScreenLogo.scale-200.png"

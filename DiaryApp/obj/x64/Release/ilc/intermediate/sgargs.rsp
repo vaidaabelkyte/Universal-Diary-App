@@ -1,0 +1,11 @@
+/out:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\intermediate\SgGenerated\\"
+/int:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\intermediate\\"
+/ref:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\in\\"
+/ref:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\in\\"
+/ref:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x64\ilc\lib\Private\\"
+/ref:"F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib
+"@F:\DiaryApp\DiaryApp\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"

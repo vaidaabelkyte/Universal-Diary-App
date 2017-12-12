@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-150"
+"ResourceDimensions"		"scale-150"
+
+[Files]
+"F:\DiaryApp\DiaryApp\obj\x86\Release\Upload\split.scale-150.pri"			"resources.pri"
+"F:\DiaryApp\DiaryApp\obj\x86\Release\PackageUploadLayout\Assets\SplashScreen.scale-150.png"			"Assets\SplashScreen.scale-150.png"

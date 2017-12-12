@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="DiaryApp.View.PostPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DiaryApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer x:ConnectionId='1'
+        x:Name="ScrollViewer2"
+        Background="FloralWhite" 
+        HorizontalScrollBarVisibility="Disabled"
+        VerticalScrollBarVisibility="Auto"
+        >
+
+        <Grid Padding="10"
+          Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <CommandBar ClosedDisplayMode="Compact" Foreground="#FFFBF8F8" Background="#FFF9773B">
+                <AppBarButton x:ConnectionId='3' Icon="Delete" Label="Delete"                              Foreground="#FFFBF8F8" />
+                <AppBarButton x:ConnectionId='4' Icon="Edit" Label="Edit"                            Foreground="#FFFBF8F8" />
+            </CommandBar>
+          
+            <TextBlock Style="{ThemeResource BaseTextBlockStyle}"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                   Text="{Binding Path=Title}"
+                   IsTextSelectionEnabled="True"
+                   Grid.Row="2" FontWeight="Normal"  Margin="15,10,15,1" FontSize="24" FontFamily="Mongolian Baiti"/>
+
+            <TextBlock Grid.Row="4"
+                   HorizontalAlignment="Stretch"
+                   Text="{Binding Path=TimeAdded}" Foreground="#FFEA6325" FontSize="12" Margin="15,4,1,1" />
+            <TextBlock Style="{ThemeResource SubtitleTextBlockStyle}"
+                   Grid.Row="5" >
+            <Run FontSize="4" Text=""/>
+
+            </TextBlock>
+            <TextBlock Style="{ThemeResource BodyTextBlockStyle}"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                   Text="{Binding Path=Text}"
+                   IsTextSelectionEnabled="True"
+                   Grid.Row="6" FontStyle="Italic" Margin="15,1,15,1" Foreground="#FF615B5B"/>
+            <Image x:ConnectionId='2' x:Name="image" HorizontalAlignment="Left" Height="32" Margin="10,10,10,10" VerticalAlignment="Top" Width="40" Source="ms-appx:///Assets/Pen-Free-Download-PNG.png" RenderTransformOrigin="-2.024,-6.382" Grid.RowSpan="2" Stretch="Fill"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>
+

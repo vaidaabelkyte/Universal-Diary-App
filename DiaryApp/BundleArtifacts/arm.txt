@@ -1,0 +1,6 @@
+MainPackage=F:\DiaryApp\DiaryApp\bin\ARM\Release\DiaryApp_1.1.1.0_ARM.appx
+SymbolPackage=F:\DiaryApp\DiaryApp\AppPackages\DiaryApp_1.1.1.0_Test\DiaryApp_1.1.1.0_ARM.appxsym
+ResourcePack=F:\DiaryApp\DiaryApp\bin\ARM\Release\DiaryApp_1.1.1.0_scale-100.appx
+ResourcePack=F:\DiaryApp\DiaryApp\bin\ARM\Release\DiaryApp_1.1.1.0_scale-125.appx
+ResourcePack=F:\DiaryApp\DiaryApp\bin\ARM\Release\DiaryApp_1.1.1.0_scale-150.appx
+ResourcePack=F:\DiaryApp\DiaryApp\bin\ARM\Release\DiaryApp_1.1.1.0_scale-400.appx
